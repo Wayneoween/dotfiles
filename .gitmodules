@@ -1,9 +1,6 @@
 [submodule "bashrc/.bash-git-prompt"]
 	path = bashrc/.bash-git-prompt
 	url = https://github.com/magicmonty/bash-git-prompt.git
-[submodule "vim/.vim/vim/.vim/vimrc"]
-	path = vim/.vim/vimrc
-	url = https://github.com/Wayneoween/vimrc.git
 [submodule "vim/.vim/vimrc"]
 	path = vim/.vim/vimrc
-	url = git@github.com:Wayneoween/vimrc.git
+	url = https://github.com/Wayneoween/vimrc.git
