@@ -54,10 +54,6 @@ esac
 
 export TERM=xterm256-color
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
 _complete_ssh_hosts ()
 {
         COMPREPLY=()
@@ -93,19 +89,32 @@ fi
 # Enable per-word remove with ctrl+w
 #bind '"\C-w":backward-kill-word'
 
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 
+if [ -f /usr/local/opt/nvm/nvm.sh ]; then
+    export NVM_DIR="$HOME/.nvm"
+    . "/usr/local/opt/nvm/nvm.sh"
+fi
 # Load h.sh
-. ~/.bash_highlight.sh
+if [ -f ~/.bash_highlight.sh ]; then
+    . ~/.bash_highlight.sh
+fi
 
 # Run twolfson/sexy-bash-prompt
 # https://github.com/twolfson/sexy-bash-prompt
+if [ -f ~/.bash_prompt ]; then
 . ~/.bash_prompt
+fi
 
 # rbenv
+if [ -f ~/.rbenrc ]; then
 . ~/.rbenrc
+fi
 
+if [ -f $HOME/bin/tmuxinator.bash ]; then
 source $HOME/bin/tmuxinator.bash
+fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
