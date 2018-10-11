@@ -23,7 +23,7 @@ alias irb='irb -r irb/completion'
 alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
-if [ $platform == 'osx' ]; then
+if [ $platform != 'linux' ]; then
     alias ls='ls -G'
 else
     alias ls='ls --color=auto'
