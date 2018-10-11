@@ -1,13 +1,11 @@
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+   platform='linux'
+elif [[ "$unamestr" == 'FreeBSD' ]]; then
+   platform='freebsd'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   platform='osx'
 fi
 
 alias bashaliases='vim ~/.bash_aliases'
@@ -25,7 +23,11 @@ alias irb='irb -r irb/completion'
 alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
-alias ls='ls --color=auto'
+if [ $platform == 'osx' ]; then
+    alias ls='ls -G'
+else
+    alias ls='ls --color=auto'
+fi
 alias mpv='mpv --cache=400000 '
 alias python='python3'
 alias scrn='mate-screenshot --interactive'

@@ -8,6 +8,16 @@ case $- in
       *) return;;
 esac
 
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+   platform='linux'
+elif [[ "$unamestr" == 'FreeBSD' ]]; then
+   platform='freebsd'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   platform='osx'
+fi
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth:erasedups
@@ -33,8 +43,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
@@ -52,26 +60,11 @@ case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
 esac
 
-export TERM=xterm256-color
-
-_complete_ssh_hosts ()
-{
-        COMPREPLY=()
-        cur="${COMP_WORDS[COMP_CWORD]}"
-        comp_ssh_hosts=`cat ~/.ssh/known_hosts | \
-                        cut -f 1 -d ' ' | \
-                        sed -e s/,.*//g | \
-                        grep -v ^# | \
-                        uniq | \
-                        grep -v "\[" ;
-                cat ~/.ssh/config | \
-                        grep "^Host " | \
-                        awk '{print $2}'
-                `
-        COMPREPLY=( $(compgen -W "${comp_ssh_hosts}" -- $cur))
-        return 0
-}
-complete -F _complete_ssh_hosts ssh
+if [ $platform == 'freebsd' ]; then
+    export TERM=xterm
+else
+    export TERM=xterm256-color
+fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -86,8 +79,10 @@ if ! shopt -oq posix; then
     fi
 fi
 
-# Enable per-word remove with ctrl+w
-#bind '"\C-w":backward-kill-word'
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+fi
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -105,16 +100,16 @@ fi
 # Run twolfson/sexy-bash-prompt
 # https://github.com/twolfson/sexy-bash-prompt
 if [ -f ~/.bash_prompt ]; then
-. ~/.bash_prompt
+    . ~/.bash_prompt
 fi
 
 # rbenv
-if [ -f ~/.rbenrc ]; then
-. ~/.rbenrc
+if [ -f ~/.rbenvrc ]; then
+    . ~/.rbenvrc
 fi
 
 if [ -f $HOME/bin/tmuxinator.bash ]; then
-source $HOME/bin/tmuxinator.bash
+    source $HOME/bin/tmuxinator.bash
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
