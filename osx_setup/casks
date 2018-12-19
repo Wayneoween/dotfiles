@@ -2,14 +2,14 @@
 adobe-creative-cloud
 alfred
 amethyst
-anaconda
 autopano-giga
-bettertouchtool
 bill
 dash
 discord
 divvy
 docker
+drivethrurpg
+drivethrurpg-library
 dropbox
 exodus
 filezilla
@@ -35,7 +35,6 @@ freefilesync
 google-chrome
 gpg-suite-beta
 handbrake
-hipchat
 imageoptim
 iterm2
 keepassx
@@ -49,6 +48,7 @@ nagstamon
 nerdtool
 obs
 paragon-ntfs
+posterazor
 presentation
 skype
 spotify
@@ -57,12 +57,11 @@ syrinscape
 teamspeak-client
 texpad
 thunderbird
-timemachinescheduler
+timemachineeditor
 tunnelblick
 vagrant
 virtualbox
 virtualbox-extension-pack
 visual-studio-code
 vlc
-vmware-fusion
 wireshark
