@@ -2,6 +2,7 @@ vim/.vim/.vimbak/*
 vim/.vim/.vimtmp/*
 vim/.vim/.vimundo/*
 vim/.vim/bundle
+vim/.vim/plugged
 vim/.vim/tags
 bashrc/.bash_eternal_history
 bashrc/.bash_history

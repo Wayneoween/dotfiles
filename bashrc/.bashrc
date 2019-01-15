@@ -25,6 +25,8 @@ HISTCONTROL=ignoreboth:erasedups
 # append to the history file, don't overwrite it
 shopt -s histappend
 
+export LANG="en_US.UTF-8"
+
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 #HISTSIZE=1000
 #HISTFILESIZE=2000
@@ -33,15 +35,17 @@ export HISTSIZE=
 export HISTFILESIZE=
 export HISTFILE=~/.bash_eternal_history
 export EDITOR=vim
-export PATH="$HOME/bin:/usr/local/sbin:$PATH"
+export PATH="$HOME/bin:$PATH"
+# Homebrew
+export PATH="/usr/local/sbin:$PATH"
 
 export GOPATH="$HOME/code/go"
 export GOBIN="$HOME/bin"
 
 # node version manager
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
