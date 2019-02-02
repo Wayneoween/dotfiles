@@ -46,7 +46,6 @@ export GOBIN="$HOME/bin"
 #export NVM_DIR="$HOME/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export LANG=en_us.UTF-8
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
