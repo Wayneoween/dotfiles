@@ -1,0 +1,8 @@
+[submodule "vim/.vim"]
+	path = vim/.vim
+	url = https://github.com/Wayneoween/vimrc.git
+	branch = master
+[submodule "bashrc/.bash-git-prompt"]
+	path = bashrc/.bash-git-prompt
+	url = https://github.com/magicmonty/bash-git-prompt.git
+	branch = master
