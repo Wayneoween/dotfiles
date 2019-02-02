@@ -268,7 +268,7 @@ sexy_bash_prompt_get_git_info () {
   fi
 }
 
-if [ "$HOSTNAME" != "ceto" ]; then
+if [ "$HOSTNAME" != "minos" ]; then
     remotehost="$(hostname -f)"
     # Define the sexy-bash-prompt
     PS1="\[$sexy_bash_prompt_user_color\]\u\[$sexy_bash_prompt_reset\] \
