@@ -12,14 +12,15 @@ brew "autoconf"
 brew "bash-completion"
 brew "libpng"
 brew "fontconfig"
-brew "gettext"
 brew "gdbm"
+brew "gettext"
 brew "libffi"
-brew "openssl"
+brew "openssl@1.1"
 brew "pcre"
 brew "readline"
 brew "sqlite"
 brew "glib"
+brew "openssl"
 brew "pixman"
 brew "cairo"
 brew "carthage"
@@ -34,8 +35,8 @@ brew "fdupes"
 brew "fribidi"
 brew "gmp"
 brew "libevent"
-brew "libtasn1"
 brew "libunistring"
+brew "libtasn1"
 brew "nettle"
 brew "p11-kit"
 brew "gnutls"
@@ -46,7 +47,6 @@ brew "lame"
 brew "libtiff"
 brew "little-cms2"
 brew "libass"
-brew "x264"
 brew "xvid"
 brew "ffmpeg"
 brew "fx"
@@ -82,7 +82,6 @@ brew "ncdu"
 brew "neofetch"
 brew "nmap"
 brew "nvm"
-brew "openssl@1.1"
 brew "p7zip"
 brew "pigz"
 brew "pngcrush"
@@ -115,6 +114,7 @@ cask "alfred"
 cask "amethyst"
 cask "autopano-giga"
 cask "bill"
+cask "blender"
 cask "cheatsheet"
 cask "dash"
 cask "discord"
@@ -185,12 +185,14 @@ mas "Deliveries", id: 924726344
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Irvue", id: 1039633667
+mas "LyricsX", id: 1254743014
 mas "Mactracker", id: 430255202
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "MoneyMoney", id: 872698314
 mas "Nightlight", id: 1429386865
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "PiPifier", id: 1160374471
 mas "Slack", id: 803453959
 mas "Telephone", id: 406825478
 mas "Texpad", id: 458866234
