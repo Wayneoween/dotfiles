@@ -18,6 +18,10 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
    platform='osx'
 fi
 
+if [[ "$platform" == "osx" ]]; then
+    export BASH_SILENCE_DEPRECATION_WARNING=1
+fi
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth:erasedups
