@@ -16,6 +16,7 @@ elif [[ "$unamestr" == 'FreeBSD' ]]; then
    platform='freebsd'
 elif [[ "$unamestr" == 'Darwin' ]]; then
    platform='osx'
+   RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 fi
 
 if [[ "$platform" == "osx" ]]; then

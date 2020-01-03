@@ -30,7 +30,6 @@ if [ $platform != 'linux' ]; then
 else
     alias ls='ls --color=auto'
 fi
-alias mpv='mpv --cache=400000 '
 alias python='python3'
 alias scrn='mate-screenshot --interactive'
 alias sshconf='vim ~/.ssh/config'
