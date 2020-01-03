@@ -1,5 +1,13 @@
 # update path
-export PATH=$HOME/.rbenv/bin:$PATH
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+    export PATH="$HOME/.rbenv/bin:$PATH"
+elif [[ "$unamestr" == 'FreeBSD' ]]; then
+    export PATH="$HOME/.rbenv/bin:$PATH"
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   export PATH=/usr/local/bin:$PATH
+fi
 
 # Enable shims and autocompletion
 eval "$(rbenv init -)"
