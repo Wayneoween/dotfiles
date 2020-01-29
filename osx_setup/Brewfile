@@ -6,6 +6,7 @@ tap "homebrew/cask-eid"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "jeantil/autokbisw"
 tap "puppetlabs/puppet"
 tap "vitorgalvao/tiny-scripts"
 brew "bash"
@@ -20,6 +21,7 @@ brew "exa"
 brew "exiftool"
 brew "fdupes"
 brew "ffmpeg"
+brew "node"
 brew "fx"
 brew "fzf"
 brew "gcc"
@@ -43,7 +45,7 @@ brew "lynx"
 brew "mas"
 brew "mkcert"
 brew "mosh"
-brew "mpv"
+brew "mpv", link: false
 brew "mtr"
 brew "mutt"
 brew "ncdu"
@@ -52,15 +54,18 @@ brew "nmap"
 brew "nss"
 brew "nvm"
 brew "p7zip"
+brew "pandoc"
 brew "peco"
 brew "pigz"
 brew "pngcrush"
 brew "prettier"
 brew "pv"
 brew "pwgen"
+brew "ruby-build"
 brew "rbenv"
 brew "rclone"
 brew "rename"
+brew "restic"
 brew "shellcheck"
 brew "sloccount"
 brew "slurm"
@@ -75,11 +80,14 @@ brew "tmux"
 brew "tree"
 brew "unrar"
 brew "upx"
+brew "v8"
+brew "v8@3.15"
 brew "vim"
 brew "weechat"
 brew "wget"
 brew "wireguard-go"
 brew "wireguard-tools"
+brew "jeantil/autokbisw/autokbisw"
 brew "vitorgalvao/tiny-scripts/cask-repair"
 cask "1password"
 cask "adobe-creative-cloud"
@@ -133,6 +141,7 @@ cask "paragon-ntfs"
 cask "posterazor"
 cask "presentation"
 cask "signal"
+cask "sketchup"
 cask "skype"
 cask "spotify"
 cask "steam"
@@ -152,6 +161,7 @@ mas "Amphetamine", id: 937984704
 mas "Apple Configurator 2", id: 1037126344
 mas "Carcassonne", id: 901869346
 mas "Deliveries", id: 924726344
+mas "EasyRes", id: 688211836
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Irvue", id: 1039633667
@@ -163,8 +173,11 @@ mas "MoneyMoney", id: 872698314
 mas "Nightlight", id: 1429386865
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "PiPer", id: 1421915518
 mas "PiPifier", id: 1160374471
+mas "Pomo Timer", id: 1447569061
 mas "Slack", id: 803453959
+mas "Sweet Home 3D", id: 669289700
 mas "Telephone", id: 406825478
 mas "Texpad", id: 458866234
 mas "Things", id: 904280696
