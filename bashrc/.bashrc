@@ -1,6 +1,5 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
+# shellcheck disable=SC1090,SC1091
 
 # If not running interactively, don't do anything
 case $- in
@@ -9,7 +8,7 @@ case $- in
 esac
 
 platform='unknown'
-unamestr=`uname`
+unamestr=$(uname)
 if [[ "$unamestr" == 'Linux' ]]; then
    platform='linux'
 elif [[ "$unamestr" == 'FreeBSD' ]]; then
@@ -64,6 +63,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
+# shellcheck disable=2034
 case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
 esac
@@ -88,6 +88,7 @@ if ! shopt -oq posix; then
 fi
 
 # enable color support of ls and also add handy aliases
+# shellcheck disable=SC2015
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
@@ -115,12 +116,13 @@ if [ -f ~/.rbenvrc ]; then
     . ~/.rbenvrc
 fi
 
-if [ -f $HOME/bin/tmuxinator.bash ]; then
-    source $HOME/bin/tmuxinator.bash
+if [ -f "$HOME"/bin/tmuxinator.bash ]; then
+    source "$HOME"/bin/tmuxinator.bash
 fi
 
 if [[ "$platform" == "osx" ]]; then
-    export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+    RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+    export RUBY_CONFIGURE_OPTS
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
