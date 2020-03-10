@@ -142,7 +142,6 @@ cask "posterazor"
 cask "presentation"
 cask "signal"
 cask "sketchup"
-cask "skype"
 cask "spotify"
 cask "steam"
 cask "syncthing"
@@ -168,7 +167,6 @@ mas "Irvue", id: 1039633667
 mas "Keynote", id: 409183694
 mas "LyricsX", id: 1254743014
 mas "Mactracker", id: 430255202
-mas "Microsoft Remote Desktop", id: 1295203466
 mas "MoneyMoney", id: 872698314
 mas "Nightlight", id: 1429386865
 mas "Numbers", id: 409203825
