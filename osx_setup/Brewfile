@@ -20,6 +20,7 @@ brew "erlang"
 brew "exa"
 brew "exiftool"
 brew "fdupes"
+brew "gobject-introspection"
 brew "ffmpeg"
 brew "node"
 brew "fx"
@@ -28,7 +29,6 @@ brew "gcc"
 brew "git"
 brew "glances"
 brew "go"
-brew "gobject-introspection"
 brew "gpac"
 brew "graphviz"
 brew "hexyl"
@@ -70,7 +70,7 @@ brew "shellcheck"
 brew "sloccount"
 brew "slurm"
 brew "speedtest-cli"
-brew "ssh-copy-id"
+brew "ssh-copy-id", link: true
 brew "stow"
 brew "telnet"
 brew "the_silver_searcher"
@@ -128,7 +128,6 @@ cask "handbrake"
 cask "imageoptim"
 cask "jqbx"
 cask "keepassx"
-cask "keybase"
 cask "keyboard-cleaner"
 cask "mactex"
 cask "microsoft-office"
@@ -136,15 +135,14 @@ cask "mpv"
 cask "mysqlworkbench"
 cask "nagstamon"
 cask "ngrok"
+cask "notion"
 cask "obs"
 cask "paragon-ntfs"
 cask "posterazor"
 cask "presentation"
-cask "signal"
 cask "sketchup"
 cask "spotify"
 cask "steam"
-cask "syncthing"
 cask "teamspeak-client"
 cask "texpad"
 cask "thunderbird"
@@ -164,6 +162,7 @@ mas "EasyRes", id: 688211836
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Irvue", id: 1039633667
+mas "Ka-Block!", id: 1335413823
 mas "Keynote", id: 409183694
 mas "LyricsX", id: 1254743014
 mas "Mactracker", id: 430255202
@@ -181,6 +180,5 @@ mas "Telephone", id: 406825478
 mas "Texpad", id: 458866234
 mas "Things", id: 904280696
 mas "Tweetbot", id: 557168941
-mas "uBlock", id: 1385985095
 mas "Xcode", id: 497799835
 mas "XMind", id: 1327661892
