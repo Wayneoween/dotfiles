@@ -1,0 +1,54 @@
+[user]
+	name = Marius Schuller
+	email = marius.schuller@googlemail.com
+	signingkey = EE69818D
+
+[alias]
+	b = branch
+	br = branch
+	ci = commit
+	co = checkout
+	commend = commit --amend --no-edit
+	hub = repo hub
+	it = !git init && git commit -m “root” --allow-empty
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	logpretty = log --graph --decorate --pretty=oneline --abbrev-commit
+	merc = merge --no-ff
+	please = push --force-with-lease
+	s = status
+	sco = ! git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
+	st = status
+	undo = reset --soft HEAD^
+	yolo = !git add -A && git commit -m \"$(curl -s whatthecommit.com/index.txt)\" && git push
+
+[merge]
+	ff = only
+	tool = vimdiff
+	conflictstyle = diff3
+
+[push]
+	default = current
+
+[status]
+	showUntrackedFiles = all
+
+[transfer]
+	fsckobjects = true
+
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+
+[gitrepo "github"]
+	token = b8d6bd0fd5ae9c81acb24ae76275b625c6859891
+
+[grep]
+	lineNumber = true
+[protocol]
+	version = 2
