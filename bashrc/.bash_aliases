@@ -32,7 +32,7 @@ else
 fi
 alias python='python3'
 alias scrn='mate-screenshot --interactive'
-alias sshconf='vim ~/.ssh/config'
+alias sshconfig='vim ~/.ssh/config'
 alias t=task
 alias update='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 alias upgrade='sudo apt update && sudo apt upgrade && sudo apt autoremove'
