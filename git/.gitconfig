@@ -40,10 +40,12 @@
 	diff = auto
 	interactive = auto
 	status = auto
+	ui = true
 
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
+	pager = diff-so-fancy | less --tabs=4 -RFX
 
 [gitrepo "github"]
 	token = b8d6bd0fd5ae9c81acb24ae76275b625c6859891
@@ -57,3 +59,18 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	func = 146 bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[interactive]
+	diffFilter = diff-so-fancy --patch
