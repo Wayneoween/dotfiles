@@ -1,5 +1,7 @@
+# shellcheck disable=SC2039
+
 platform='unknown'
-unamestr=`uname`
+unamestr=$(uname)
 if [[ "$unamestr" == 'Linux' ]]; then
    platform='linux'
 elif [[ "$unamestr" == 'FreeBSD' ]]; then
@@ -12,6 +14,10 @@ alias bashaliases='vim ~/.bash_aliases'
 alias bashrc='vim ~/.bashrc'
 alias brew="PATH=/Users/wayne/.rbenv/shims:/Users/wayne/.rbenv/bin:/Users/wayne/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/TeX/texbin:/Applications/Wireshark.app/Contents/MacOS brew"
 alias cask="brew cask"
+if command -v bat &> /dev/null
+then
+    alias cat='bat'
+fi
 alias d='docker'
 alias dcom='docker-compose'
 alias digall='dig +noall +answer +multiline any'
@@ -40,7 +46,7 @@ alias v='vagrant'
 alias vimrc='vim ~/.vimrc'
 alias watch='watch -c '
 
-function ddig {
+ddig() {
     ip=$(dig +short "$1")
     echo "$ip"
     dig +short -x "$ip"
