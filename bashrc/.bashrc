@@ -118,8 +118,10 @@ fi
 
 # asfd
 if [ -f ~/.asdf/asdf.sh ]; then
-    . $HOME/.asdf/asdf.sh
-    . $HOME/.asdf/completions/asdf.bash
+    . "$HOME"/.asdf/asdf.sh
+fi
+if [ -f ~/.asdf/completions/asdf.bash ]; then
+    . "$HOME"/.asdf/completions/asdf.bash
 fi
 
 if [ -f "$HOME"/bin/tmuxinator.bash ]; then
