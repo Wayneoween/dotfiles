@@ -269,7 +269,7 @@ sexy_bash_prompt_get_git_info () {
 }
 
 case "$HOSTNAME" in
-  minos|ceto|pewpew)
+  minos|ceto|odyssey|pewpew)
 # Define the sexy-bash-prompt
 PS1="\[$sexy_bash_prompt_user_color\]\u\[$sexy_bash_prompt_reset\] \
 \[$sexy_bash_prompt_preposition_color\]at\[$sexy_bash_prompt_reset\] \

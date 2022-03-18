@@ -40,6 +40,7 @@ export HISTFILE=~/.bash_eternal_history
 export EDITOR=vim
 export PATH="$HOME/bin:$PATH"
 # Homebrew
+eval $(/opt/homebrew/bin/brew shellenv)
 export PATH="/usr/local/sbin:$PATH"
 
 export GOPATH="$HOME/code/go"
@@ -117,11 +118,11 @@ if [ -f ~/.rbenvrc ]; then
 fi
 
 # asfd
-if [ -f ~/.asdf/asdf.sh ]; then
-    . "$HOME"/.asdf/asdf.sh
+if [ -f "$(brew --prefix asdf)/libexec/asdf.sh" ]; then
+     source "$(brew --prefix asdf)/libexec/asdf.sh"
 fi
-if [ -f ~/.asdf/completions/asdf.bash ]; then
-    . "$HOME"/.asdf/completions/asdf.bash
+if [ -f "$(brew --prefix asdf)/etc/bash_completion.d/asdf.bash" ]; then
+     source "$(brew --prefix asdf)/etc/bash_completion.d/asdf.bash"
 fi
 
 if [ -f "$HOME"/bin/tmuxinator.bash ]; then
@@ -133,4 +134,4 @@ if [[ "$platform" == "osx" ]]; then
     export RUBY_CONFIGURE_OPTS
 fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+    [ -f ~/.fzf.bash ] && source ~/.fzf.bash
