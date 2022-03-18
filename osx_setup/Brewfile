@@ -6,84 +6,159 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "vitorgalvao/tiny-scripts"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
+# Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Programmable completion for Bash 3.2
 brew "bash-completion"
+# Perl compatible regular expressions library
 brew "pcre"
+# Reimplementation of ctags(1)
 brew "ctags"
+# Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
+# Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
+# Quickly find duplicates in a set of files from the command-line
+brew "duff"
+# Perl lib for reading and writing EXIF metadata
 brew "exiftool"
+# Identify or delete duplicate files
 brew "fdupes"
-brew "gobject-introspection"
+# Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
+# GNU compiler collection
 brew "gcc"
+# Distributed revision control system
 brew "git"
+# Git extension for versioning large files
 brew "git-lfs"
+# Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# Command-line hex viewer
 brew "hexyl"
+# Improved top (interactive process viewer)
 brew "htop"
+# Curl statistics made simple
 brew "httpstat"
+# Display an interface's bandwidth usage
 brew "iftop"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
+# Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# Modular IRC client
 brew "irssi"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# Lynx-like WWW browser that supports tables, menus, etc.
 brew "links"
+# Text-based web browser
 brew "lynx"
+# Mac App Store command-line interface
 brew "mas"
+# Simple tool to make locally trusted development certificates
+brew "mkcert"
+# Remote terminal application
 brew "mosh"
+# 'traceroute' and 'ping' in a single tool
 brew "mtr"
+# NCurses Disk Usage
 brew "ncdu"
+# Fast, highly customisable system info script
 brew "neofetch"
+# Port scanning utility for large networks
 brew "nmap"
+# Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
+# 7-Zip (high compression file archiver) implementation
 brew "p7zip"
+# Swiss-army knife of markup format conversion
 brew "pandoc"
+# Simplistic interactive filtering tool
 brew "peco"
+# Parallel gzip
 brew "pigz"
+# Optimizer for PNG files
 brew "pngcrush"
+# Monitor data's progress through a pipe
 brew "pv"
+# Password generator
 brew "pwgen"
+# Install various Ruby versions and implementations
 brew "ruby-build"
+# Ruby version manager
 brew "rbenv"
+# Perl-powered file rename script with many helpful built-ins
 brew "rename"
+# Fast, efficient and secure backup program
 brew "restic"
+# Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Count lines of code in many languages
 brew "sloccount"
+# Yet another network load monitor
 brew "slurm"
+# Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
+# Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id", link: true
+# Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# User interface to the TELNET protocol
 brew "telnet"
-brew "the_silver_searcher"
-brew "tiff2png"
+# Text interface for Git repositories
 brew "tig"
+# Terminal multiplexer
 brew "tmux"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Compress/expand executable files
 brew "upx"
-brew "v8"
-brew "v8@3.15"
+# Vi 'workalike' with many additional features
 brew "vim"
+# Extensible IRC client
 brew "weechat"
+# Internet file retriever
 brew "wget"
+# Userspace Go implementation of WireGuard
 brew "wireguard-go"
+# Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
+# Download YouTube videos from the command-line
 brew "youtube-dl"
+# Quickly repair outdated/broken Casks from homebrew-cask
 brew "vitorgalvao/tiny-scripts/cask-repair"
+# Password manager that keeps all passwords secure behind one password
 cask "1password"
+# Apple TV Aerial screensaver
 cask "aerial"
+# Application launcher and productivity software
 cask "alfred"
+# Tool to customize input devices and automate computer systems
 cask "bettertouchtool"
+# 3D creation suite
 cask "blender"
+# Tool to list all active shortcuts of the current application
 cask "cheatsheet"
+# Tool to show live information about the batteries in various devices
 cask "coconutbattery"
+# Voice and text chat software
 cask "discord"
+# Application window manager focusing on simplicity
+cask "divvy"
+# App to build and share containerized applications and microservices
 cask "docker"
+# Sync DriveThruRPG libraries to compatible devices
 cask "drivethrurpg"
+# Client for the Dropbox cloud storage service
 cask "dropbox"
+# Web browser
 cask "firefox"
+# Screen color temperature controller
 cask "flux"
 cask "font-anonymice-powerline"
 cask "font-consolas-for-powerline"
@@ -100,45 +175,65 @@ cask "font-monofur-for-powerline"
 cask "font-roboto-mono-for-powerline"
 cask "font-source-code-pro-for-powerline"
 cask "font-ubuntu-mono-derivative-powerline"
+# Web browser
 cask "google-chrome"
+# Open-source video transcoder
 cask "handbrake"
+# Tool to optimize images to a smaller size
 cask "imageoptim"
+# Personal data manager focusing on security
 cask "keepassx"
+# Desktop shield and keystroke interceptor
 cask "keyboard-cleaner"
-cask "mactex"
+# Full TeX Live distribution with GUI applications
+#cask "mactex"
+# Media player based on MPlayer and mplayer2
 cask "mpv"
+# Visual tool to design, develop and administer MySQL servers
 cask "mysqlworkbench"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# App to write, plan, collaborate, and get organized
 cask "notion"
+# Open-source software for live streaming and screen recording
 cask "obs"
 cask "paragon-ntfs"
+# 3D design software
 cask "sketchup"
+# Music streaming service
 cask "spotify"
+# Video game digital distribution service
 cask "steam"
+# Voice communication client
 cask "teamspeak-client"
+# LaTeX editor
 cask "texpad"
+# Customizable email client
 cask "thunderbird"
+# Utility to change the default backup interval of Time Machine
 cask "timemachineeditor"
+# Free and open-source OpenVPN client
 cask "tunnelblick"
-cask "vagrant"
-cask "virtualbox"
-cask "virtualbox-extension-pack"
+# Open-source code editor
 cask "visual-studio-code"
+# Multimedia player
 cask "vlc"
+# Network protocol analyzer
 cask "wireshark"
 mas "Amphetamine", id: 937984704
-mas "Carcassonne", id: 901869346
+mas "Apple Configurator 2", id: 1037126344
 mas "Deliveries", id: 924726344
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Mactracker", id: 430255202
-mas "Microsoft Remote Desktop", id: 1295203466
 mas "MoneyMoney", id: 872698314
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pomo Timer", id: 1447569061
 mas "Sweet Home 3D", id: 669289700
 mas "Telephone", id: 406825478
+mas "Texpad", id: 458866234
 mas "Things", id: 904280696
 mas "Tweetbot", id: 557168941
 mas "Xcode", id: 497799835

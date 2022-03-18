@@ -19,6 +19,7 @@ fi
 
 if [[ "$platform" == "osx" ]]; then
     export BASH_SILENCE_DEPRECATION_WARNING=1
+    export HOMEBREW_NO_ENV_HINTS=1
 fi
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -40,7 +41,7 @@ export HISTFILE=~/.bash_eternal_history
 export EDITOR=vim
 export PATH="$HOME/bin:$PATH"
 # Homebrew
-eval $(/opt/homebrew/bin/brew shellenv)
+eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="/usr/local/sbin:$PATH"
 
 export GOPATH="$HOME/code/go"
