@@ -17,11 +17,6 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
    platform='osx'
 fi
 
-if [[ "$platform" == "osx" ]]; then
-    export BASH_SILENCE_DEPRECATION_WARNING=1
-    export HOMEBREW_NO_ENV_HINTS=1
-fi
-
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth:erasedups
@@ -40,9 +35,22 @@ export HISTFILESIZE=
 export HISTFILE=~/.bash_eternal_history
 export EDITOR=vim
 export PATH="$HOME/bin:$PATH"
-# Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-export PATH="/usr/local/sbin:$PATH"
+
+if [[ "$platform" == "osx" ]]; then
+    export BASH_SILENCE_DEPRECATION_WARNING=1
+    export HOMEBREW_NO_ENV_HINTS=1
+    # Homebrew
+    # /opt/homebrew/bin/brew shellenv
+    export HOMEBREW_PREFIX="/opt/homebrew";
+    export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+    export HOMEBREW_REPOSITORY="/opt/homebrew";
+    export PATH="/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}";
+    export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
+    export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+
+    export PATH="$PATH:/usr/local/sbin:"
+    export PATH="$PATH:/Users/wayne/sbin"
+fi
 
 export GOPATH="$HOME/code/go"
 export GOBIN="$HOME/bin"
@@ -135,4 +143,6 @@ if [[ "$platform" == "osx" ]]; then
     export RUBY_CONFIGURE_OPTS
 fi
 
-    [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+/opt/homebrew/bin/fish
