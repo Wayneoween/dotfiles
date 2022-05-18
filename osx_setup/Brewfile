@@ -9,189 +9,375 @@ tap "homebrew/core"
 tap "puppetlabs/puppet"
 tap "vitorgalvao/tiny-scripts"
 tap "yt-dlp/taps"
+# Generic-purpose lossless compression algorithm by Google
 brew "brotli"
+# Library and utilities for processing GIFs
 brew "giflib"
+# Library of 2D and 3D vector, matrix, and math operations
 brew "imath"
+# Image manipulation library
 brew "jpeg"
+# Library for manipulating PNG images
 brew "libpng"
+# TIFF library and utilities
 brew "libtiff"
+# High dynamic-range image file format
 brew "openexr"
+# Image format providing lossless and lossy compression for web images
 brew "webp"
+# Perceptual video quality assessment based on multi-method fusion
 brew "libvmaf"
+# Apache Portable Runtime library
 brew "apr"
+# Mozilla CA certificate store
 brew "ca-certificates"
+# Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
+# Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
+# Text processor and publishing toolchain for AsciiDoc
 brew "asciidoctor"
+# Macro processing language
 brew "m4"
+# Automatic configure script builder
 brew "autoconf"
+# Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
+# GNU multiple precision arithmetic library
 brew "gmp"
+# Generic library support script
 brew "libtool"
+# YAML Parser
 brew "libyaml"
+# Library for command-line editing
 brew "readline"
+# ODBC 3 connectivity for UNIX
 brew "unixodbc"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
+# Text-based UI library
 brew "ncurses"
+# GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
+# Spell checker with better logic than ispell
 brew "aspell"
+# GNU database manager
 brew "gdbm"
+# Library for decimal floating point arithmetic
 brew "mpdecimal"
+# Command-line interface for SQLite
 brew "sqlite"
+# General-purpose data compression with high compression ratio
 brew "xz"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
+# Python 2 and 3 compatibility utilities
 brew "six"
+# Official Amazon AWS command-line interface
 brew "awscli"
+# Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Programmable completion for Bash 3.2
 brew "bash-completion"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Garbage collector for C and C++
 brew "bdw-gc"
+# High performance key/value database
 brew "berkeley-db", link: true
+# Parser generator
 brew "bison"
+# Fish completion for brew-cask
 brew "brew-cask-completion"
+# Integer Set Library for the polyhedral model
 brew "isl"
+# C library for multiple-precision floating-point computations
 brew "mpfr"
+# C library for the arithmetic of high precision complex numbers
 brew "libmpc"
+# Zstandard is a real-time compression algorithm
 brew "zstd"
+# GNU compiler collection
 brew "gcc"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Software library to render fonts
 brew "freetype"
+# XML-based font configuration API for X Windows
 brew "fontconfig"
+# Portable Foreign Function Interface library
 brew "libffi"
+# Perl compatible regular expressions library
 brew "pcre"
+# Core application library for C
 brew "glib"
+# Manage compile and link flags for libraries
 brew "pkg-config"
+# X.Org: pthread-stubs.pc
 brew "libpthread-stubs"
+# X.Org: Protocol Headers
 brew "xorgproto"
+# X.Org: A Sample Authorization Protocol for X
 brew "libxau"
+# X.Org: X Display Manager Control Protocol library
 brew "libxdmcp"
+# X.Org: Interface to the X Window System protocol
 brew "libxcb"
+# X.Org: Core X11 protocol client library
 brew "libx11"
+# X.Org: Library for common extensions to the X11 protocol
 brew "libxext"
+# X.Org: Library for the Render Extension to the X11 protocol
 brew "libxrender"
+# Real-time data compression library
 brew "lzo"
+# Low-level library for pixel manipulation
 brew "pixman"
+# Cross-platform make
 brew "cmake"
+# Reimplementation of ctags(1)
 brew "ctags"
+# AV1 decoder targeted to be small and fast
 brew "dav1d"
+# Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
+# Standard SGML representation system for technical documents
 brew "docbook"
+# XML vocabulary to create presentation-neutral documents
 brew "docbook-xsl"
+# Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
+# Quickly find duplicates in a set of files from the command-line
 brew "duff"
+# Modern replacement for 'ls'
 brew "exa"
+# Perl lib for reading and writing EXIF metadata
 brew "exiftool"
+# Perl compatible regular expressions library with a new API
 brew "pcre2"
+# Identify or delete duplicate files
 brew "fdupes"
+# User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
+# Minimalistic plugin API for video effects
 brew "frei0r"
+# Implementation of the Unicode BiDi algorithm
 brew "fribidi"
+# JBIG2 decoder and library (for monochrome documents)
 brew "jbig2dec"
+# International domain name library
 brew "libidn"
+# Color management engine supporting ICC profiles
 brew "little-cms2"
+# Library for JPEG-2000 image manipulation
 brew "openjpeg"
+# Interpreter for PostScript and PDF
 brew "ghostscript"
+# Distributed revision control system
 brew "git"
+# Git extension for versioning large files
 brew "git-lfs"
+# Command-line option parsing utility
 brew "gnu-getopt"
+# GNU implementation of the famous stream editor
 brew "gnu-sed"
-brew "graphite2"
-brew "jasper"
-brew "netpbm"
-brew "gts"
+# C string library for manipulating Unicode strings
 brew "libunistring"
+# GNU Ubiquitous Intelligent Language for Extensions
 brew "guile"
-brew "icu4c"
-brew "harfbuzz"
-brew "hexyl"
-brew "hr"
-brew "htop"
-brew "httpstat"
-brew "hub"
-brew "iftop"
-brew "libde265"
-brew "xmlto"
-brew "shared-mime-info"
-brew "x265"
-brew "libomp"
-brew "imagemagick"
-brew "irssi"
-brew "jansson"
-brew "oniguruma"
-brew "jq"
+# Asynchronous event library
 brew "libevent"
+# International domain name library (IDNA2008, Punycode and TR46)
 brew "libidn2"
+# HTTP/2 C Library
 brew "libnghttp2"
-brew "pango"
-brew "librsvg"
-brew "libssh2"
+# ASN.1 structure parser library
 brew "libtasn1"
-brew "links"
-brew "lua"
-brew "lz4"
-brew "mas"
-brew "python@3.10"
-brew "meson"
-brew "mkcert"
-brew "protobuf"
-brew "mosh"
-brew "mtr"
-brew "nasm"
-brew "ncdu"
-brew "screenresolution"
-brew "neofetch"
-brew "nethogs"
+# Low-level cryptographic library
 brew "nettle"
-brew "nmap"
-brew "openjdk"
-brew "openssl@3"
+# Library to load and enumerate PKCS#11 modules
 brew "p11-kit"
-brew "p7zip"
-brew "pandoc"
-brew "peco"
-brew "perl"
-brew "pigz"
-brew "pngcrush"
-brew "pv"
-brew "pwgen"
-brew "ruby-build"
-brew "rbenv"
-brew "rename"
-brew "restic"
-brew "ruby"
-brew "shellcheck"
-brew "sloccount"
-brew "slurm"
-brew "speedtest-cli"
-brew "ssh-copy-id"
-brew "starship"
-brew "stow"
-brew "utf8proc"
-brew "subversion"
-brew "tcl-tk"
-brew "telnet"
-brew "the_silver_searcher"
-brew "tiff2png"
-brew "tig"
-brew "tmux"
-brew "tree"
-brew "ucl"
+# Validating, recursive, caching DNS resolver
 brew "unbound"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# Smart font renderer for non-Roman scripts
+brew "graphite2"
+# Library for manipulating JPEG-2000 images
+brew "jasper"
+# Image manipulation
+brew "netpbm"
+# GNU triangulated surface library
+brew "gts"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Command-line hex viewer
+brew "hexyl"
+# <hr />, for your terminal window
+brew "hr"
+# Improved top (interactive process viewer)
+brew "htop"
+# Curl statistics made simple
+brew "httpstat"
+# Add GitHub support to git on the command-line
+brew "hub"
+# Display an interface's bandwidth usage
+brew "iftop"
+# Open h.265 video codec implementation
+brew "libde265"
+# Convert XML to another format (based on XSL or other tools)
+brew "xmlto"
+# Database of common MIME types
+brew "shared-mime-info"
+# H.265/HEVC encoder
+brew "x265"
+# LLVM's OpenMP runtime library
+brew "libomp"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Modular IRC client
+brew "irssi"
+# C library for encoding, decoding, and manipulating JSON
+brew "jansson"
+# Regular expressions library
+brew "oniguruma"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Framework for layout and rendering of i18n text
+brew "pango"
+# Library to render SVG files using Cairo
+brew "librsvg"
+# C library implementing the SSH2 protocol
+brew "libssh2"
+# Lynx-like WWW browser that supports tables, menus, etc.
+brew "links"
+# Powerful, lightweight programming language
+brew "lua"
+# Extremely Fast Compression algorithm
+brew "lz4"
+# Mac App Store command-line interface
+brew "mas"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Fast and user friendly build system
+brew "meson"
+# Simple tool to make locally trusted development certificates
+brew "mkcert"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
+# Remote terminal application
+brew "mosh"
+# 'traceroute' and 'ping' in a single tool
+brew "mtr"
+# Netwide Assembler (NASM) is an 80x86 assembler
+brew "nasm"
+# NCurses Disk Usage
+brew "ncdu"
+# Get, set, and list display resolution
+brew "screenresolution"
+# Fast, highly customisable system info script
+brew "neofetch"
+# Net top tool grouping bandwidth per process
+brew "nethogs"
+# Port scanning utility for large networks
+brew "nmap"
+# Development kit for the Java programming language
+brew "openjdk"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# 7-Zip (high compression file archiver) implementation
+brew "p7zip"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Simplistic interactive filtering tool
+brew "peco"
+# Highly capable, feature-rich programming language
+brew "perl"
+# Parallel gzip
+brew "pigz"
+# Optimizer for PNG files
+brew "pngcrush"
+# Monitor data's progress through a pipe
+brew "pv"
+# Password generator
+brew "pwgen"
+# Install various Ruby versions and implementations
+brew "ruby-build"
+# Ruby version manager
+brew "rbenv"
+# Perl-powered file rename script with many helpful built-ins
+brew "rename"
+# Fast, efficient and secure backup program
+brew "restic"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Count lines of code in many languages
+brew "sloccount"
+# Yet another network load monitor
+brew "slurm"
+# Command-line interface for https://speedtest.net bandwidth tests
+brew "speedtest-cli"
+# Add a public key to a remote machine's authorized_keys file
+brew "ssh-copy-id"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
+# Clean C library for processing UTF-8 Unicode data
+brew "utf8proc"
+# Version control system designed to be a better CVS
+brew "subversion"
+# Tool Command Language
+brew "tcl-tk"
+# User interface to the TELNET protocol
+brew "telnet"
+# Code-search similar to ack
+brew "the_silver_searcher"
+# TIFF to PNG converter
+brew "tiff2png"
+# Text interface for Git repositories
+brew "tig"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Data compression library with small memory footprint
+brew "ucl"
+# Compress/expand executable files
 brew "upx"
+# X.Org: Set of autoconf macros used to build other xorg packages
 brew "util-macros"
+# Google's JavaScript engine
 brew "v8"
+# Vi 'workalike' with many additional features
 brew "vim"
+# Internet file retriever
 brew "wget"
+# Userspace Go implementation of WireGuard
 brew "wireguard-go"
+# Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
+# X.Org: X Network Transport layer shared code
 brew "xtrans"
-brew "yarn"
+# Download YouTube videos from the command-line
 brew "youtube-dl"
+# The Charm Tool and Library 🌟
 brew "charmbracelet/tap/charm"
+# Quickly repair outdated/broken Casks from homebrew-cask
 brew "vitorgalvao/tiny-scripts/cask-repair"
+# A youtube-dl fork with additional features and fixes
 brew "yt-dlp/taps/yt-dlp"
+# Full TeX Live distribution with GUI applications
 cask "mactex"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Free and Open Source messaging and emailing app
 cask "rambox"
+# Video communication and virtual meeting platform
 cask "zoom"
 mas "AdGuard for Safari", id: 1440147259
 mas "Amphetamine", id: 937984704
