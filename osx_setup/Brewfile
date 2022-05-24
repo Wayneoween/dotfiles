@@ -133,6 +133,8 @@ brew "libxrender"
 brew "lzo"
 # Low-level library for pixel manipulation
 brew "pixman"
+# Human-friendly and fast alternative to cut and (sometimes) awk
+brew "choose-rust"
 # Cross-platform make
 brew "cmake"
 # Reimplementation of ctags(1)
@@ -147,6 +149,8 @@ brew "docbook"
 brew "docbook-xsl"
 # Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
+# Disk Usage/Free Utility - a better 'df' alternative
+brew "duf"
 # Quickly find duplicates in a set of files from the command-line
 brew "duff"
 # Modern replacement for 'ls'
@@ -163,6 +167,8 @@ brew "fish"
 brew "frei0r"
 # Implementation of the Unicode BiDi algorithm
 brew "fribidi"
+# Terminal JSON viewer
+brew "fx"
 # JBIG2 decoder and library (for monochrome documents)
 brew "jbig2dec"
 # International domain name library
@@ -177,6 +183,8 @@ brew "ghostscript"
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
+# Render markdown on the CLI
+brew "glow"
 # Command-line option parsing utility
 brew "gnu-getopt"
 # GNU implementation of the famous stream editor
@@ -201,8 +209,12 @@ brew "p11-kit"
 brew "unbound"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Ping, but with a graph
+brew "gping"
 # Smart font renderer for non-Roman scripts
 brew "graphite2"
+# Make JSON greppable
+brew "gron"
 # Library for manipulating JPEG-2000 images
 brew "jasper"
 # Image manipulation
@@ -241,6 +253,10 @@ brew "imagemagick"
 brew "irssi"
 # C library for encoding, decoding, and manipulating JSON
 brew "jansson"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Serializes the output of command-line tools to structured JSON output
+brew "jc"
 # Regular expressions library
 brew "oniguruma"
 # Lightweight and flexible command-line JSON processor
@@ -259,8 +275,6 @@ brew "lua"
 brew "lz4"
 # Mac App Store command-line interface
 brew "mas"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
 # Fast and user friendly build system
 brew "meson"
 # Simple tool to make locally trusted development certificates
@@ -313,6 +327,8 @@ brew "rename"
 brew "restic"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
+# Intuitive find & replace CLI
+brew "sd"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Count lines of code in many languages
@@ -347,6 +363,8 @@ brew "tmux"
 brew "tree"
 # Data compression library with small memory footprint
 brew "ucl"
+# Tool for writing command-line pipes with instant live preview
+brew "up"
 # Compress/expand executable files
 brew "upx"
 # X.Org: Set of autoconf macros used to build other xorg packages
@@ -361,8 +379,12 @@ brew "wget"
 brew "wireguard-go"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
+# Fast CSV toolkit written in Rust
+brew "xsv"
 # X.Org: X Network Transport layer shared code
 brew "xtrans"
+# Bring your favorite shell wherever you go through the ssh
+brew "xxh"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 # The Charm Tool and Library 🌟
