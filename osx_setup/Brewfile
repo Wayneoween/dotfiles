@@ -61,20 +61,6 @@ brew "ncurses"
 brew "gettext"
 # Spell checker with better logic than ispell
 brew "aspell"
-# GNU database manager
-brew "gdbm"
-# Library for decimal floating point arithmetic
-brew "mpdecimal"
-# Command-line interface for SQLite
-brew "sqlite"
-# General-purpose data compression with high compression ratio
-brew "xz"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# Python 2 and 3 compatibility utilities
-brew "six"
-# Official Amazon AWS command-line interface
-brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Programmable completion for Bash 3.2
@@ -105,10 +91,20 @@ brew "btop"
 brew "freetype"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
+# GNU database manager
+brew "gdbm"
 # Portable Foreign Function Interface library
 brew "libffi"
+# Library for decimal floating point arithmetic
+brew "mpdecimal"
 # Perl compatible regular expressions library
 brew "pcre"
+# Command-line interface for SQLite
+brew "sqlite"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Core application library for C
 brew "glib"
 # Manage compile and link flags for libraries
@@ -279,6 +275,8 @@ brew "mas"
 brew "meson"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
+# Python 2 and 3 compatibility utilities
+brew "six"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # Remote terminal application
@@ -293,6 +291,8 @@ brew "ncdu"
 brew "screenresolution"
 # Fast, highly customisable system info script
 brew "neofetch"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # Net top tool grouping bandwidth per process
 brew "nethogs"
 # Port scanning utility for large networks
