@@ -16,7 +16,7 @@ brew "giflib"
 # Library of 2D and 3D vector, matrix, and math operations
 brew "imath"
 # Image manipulation library
-brew "jpeg"
+brew "jpeg", link: true
 # Library for manipulating PNG images
 brew "libpng"
 # TIFF library and utilities
@@ -81,6 +81,10 @@ brew "isl"
 brew "mpfr"
 # C library for the arithmetic of high precision complex numbers
 brew "libmpc"
+# Extremely Fast Compression algorithm
+brew "lz4"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Zstandard is a real-time compression algorithm
 brew "zstd"
 # GNU compiler collection
@@ -93,20 +97,12 @@ brew "freetype"
 brew "fontconfig"
 # GNU database manager
 brew "gdbm"
-# Portable Foreign Function Interface library
-brew "libffi"
-# Library for decimal floating point arithmetic
-brew "mpdecimal"
 # Perl compatible regular expressions library
 brew "pcre"
-# Command-line interface for SQLite
-brew "sqlite"
-# General-purpose data compression with high compression ratio
-brew "xz"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Core application library for C
 brew "glib"
+# Portable Foreign Function Interface library
+brew "libffi"
 # Manage compile and link flags for libraries
 brew "pkg-config"
 # X.Org: pthread-stubs.pc
@@ -127,8 +123,14 @@ brew "libxext"
 brew "libxrender"
 # Real-time data compression library
 brew "lzo"
+# Library for decimal floating point arithmetic
+brew "mpdecimal"
 # Low-level library for pixel manipulation
 brew "pixman"
+# Command-line interface for SQLite
+brew "sqlite"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Human-friendly and fast alternative to cut and (sometimes) awk
 brew "choose-rust"
 # Cross-platform make
@@ -205,6 +207,8 @@ brew "p11-kit"
 brew "unbound"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Ping, but with a graph
 brew "gping"
 # Smart font renderer for non-Roman scripts
@@ -221,6 +225,8 @@ brew "gts"
 brew "icu4c"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Post-modern modal text editor
+brew "helix"
 # Command-line hex viewer
 brew "hexyl"
 # <hr />, for your terminal window
@@ -249,8 +255,6 @@ brew "imagemagick"
 brew "irssi"
 # C library for encoding, decoding, and manipulating JSON
 brew "jansson"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
 # Serializes the output of command-line tools to structured JSON output
 brew "jc"
 # Regular expressions library
@@ -267,16 +271,12 @@ brew "libssh2"
 brew "links"
 # Powerful, lightweight programming language
 brew "lua"
-# Extremely Fast Compression algorithm
-brew "lz4"
 # Mac App Store command-line interface
 brew "mas"
 # Fast and user friendly build system
 brew "meson"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
-# Python 2 and 3 compatibility utilities
-brew "six"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # Remote terminal application
@@ -293,6 +293,8 @@ brew "screenresolution"
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# No Nonsense Neovim Client in Rust
+brew "neovide", link: false
 # Net top tool grouping bandwidth per process
 brew "nethogs"
 # Port scanning utility for large networks
@@ -311,6 +313,8 @@ brew "peco"
 brew "perl"
 # Parallel gzip
 brew "pigz"
+# Rename your files using your favorite text editor
+brew "pipe-rename"
 # Optimizer for PNG files
 brew "pngcrush"
 # Monitor data's progress through a pipe
@@ -325,12 +329,16 @@ brew "rbenv"
 brew "rename"
 # Fast, efficient and secure backup program
 brew "restic"
+# Prevent committing secret keys into your source code
+brew "ripsecrets"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Intuitive find & replace CLI
 brew "sd"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Python 2 and 3 compatibility utilities
+brew "six"
 # Count lines of code in many languages
 brew "sloccount"
 # Yet another network load monitor
@@ -389,18 +397,31 @@ brew "xxh"
 brew "youtube-dl"
 # The Charm Tool and Library 🌟
 brew "charmbracelet/tap/charm"
+# A tool for glamorous shell scripts
+brew "charmbracelet/tap/gum"
 # Quickly repair outdated/broken Casks from homebrew-cask
 brew "vitorgalvao/tiny-scripts/cask-repair"
 # A youtube-dl fork with additional features and fixes
 brew "yt-dlp/taps/yt-dlp"
+# Matrix collaboration client
+cask "element"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
+# Neovim Client
+cask "neovide"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Static website generator
+cask "publii"
 # Free and Open Source messaging and emailing app
 cask "rambox"
+# Store SSH keys in the Secure Enclave
+cask "secretive"
+# Music streaming service
+cask "spotify"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "1Password for Safari", id: 1569813296
 mas "AdGuard for Safari", id: 1440147259
 mas "Amphetamine", id: 937984704
 mas "Apple Configurator", id: 1037126344
@@ -409,13 +430,12 @@ mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Mactracker", id: 430255202
-mas "Microsoft Remote Desktop", id: 1295203466
 mas "MoneyMoney", id: 872698314
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pomo Timer", id: 1447569061
 mas "Sweet Home 3D", id: 669289700
 mas "Telephone", id: 406825478
-mas "Texpad", id: 458866234
+mas "Texifier", id: 458866234
 mas "Things", id: 904280696
 mas "Xcode", id: 497799835
