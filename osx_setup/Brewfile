@@ -15,8 +15,6 @@ brew "brotli"
 brew "giflib"
 # Library of 2D and 3D vector, matrix, and math operations
 brew "imath"
-# Image manipulation library
-brew "jpeg", link: true
 # Library for manipulating PNG images
 brew "libpng"
 # TIFF library and utilities
@@ -31,8 +29,6 @@ brew "libvmaf"
 brew "apr"
 # Mozilla CA certificate store
 brew "ca-certificates"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
 # Text processor and publishing toolchain for AsciiDoc
@@ -55,10 +51,10 @@ brew "readline"
 brew "unixodbc"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
-# Text-based UI library
-brew "ncurses"
 # GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
+# Text-based UI library
+brew "ncurses"
 # Spell checker with better logic than ispell
 brew "aspell"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -97,8 +93,8 @@ brew "freetype"
 brew "fontconfig"
 # GNU database manager
 brew "gdbm"
-# Perl compatible regular expressions library
-brew "pcre"
+# Perl compatible regular expressions library with a new API
+brew "pcre2"
 # Core application library for C
 brew "glib"
 # Portable Foreign Function Interface library
@@ -125,6 +121,8 @@ brew "libxrender"
 brew "lzo"
 # Library for decimal floating point arithmetic
 brew "mpdecimal"
+# Perl compatible regular expressions library
+brew "pcre"
 # Low-level library for pixel manipulation
 brew "pixman"
 # Command-line interface for SQLite
@@ -155,38 +153,12 @@ brew "duff"
 brew "exa"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
-# Perl compatible regular expressions library with a new API
-brew "pcre2"
 # Identify or delete duplicate files
 brew "fdupes"
-# User-friendly command-line shell for UNIX-like operating systems
-brew "fish"
 # Minimalistic plugin API for video effects
 brew "frei0r"
 # Implementation of the Unicode BiDi algorithm
 brew "fribidi"
-# Terminal JSON viewer
-brew "fx"
-# JBIG2 decoder and library (for monochrome documents)
-brew "jbig2dec"
-# International domain name library
-brew "libidn"
-# Color management engine supporting ICC profiles
-brew "little-cms2"
-# Library for JPEG-2000 image manipulation
-brew "openjpeg"
-# Interpreter for PostScript and PDF
-brew "ghostscript"
-# Distributed revision control system
-brew "git"
-# Git extension for versioning large files
-brew "git-lfs"
-# Render markdown on the CLI
-brew "glow"
-# Command-line option parsing utility
-brew "gnu-getopt"
-# GNU implementation of the famous stream editor
-brew "gnu-sed"
 # C string library for manipulating Unicode strings
 brew "libunistring"
 # GNU Ubiquitous Intelligent Language for Extensions
@@ -205,14 +177,48 @@ brew "nettle"
 brew "p11-kit"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
+# Smart font renderer for non-Roman scripts
+brew "graphite2"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Color management engine supporting ICC profiles
+brew "little-cms2"
+# Image manipulation library
+brew "jpeg", link: true
+# Library for JPEG-2000 image manipulation
+brew "openjpeg"
+# H.265/HEVC encoder
+brew "x265"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Terminal JSON viewer
+brew "fx"
+# JBIG2 decoder and library (for monochrome documents)
+brew "jbig2dec"
+# International domain name library
+brew "libidn"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
+# Distributed revision control system
+brew "git"
+# Git extension for versioning large files
+brew "git-lfs"
+# Render markdown on the CLI
+brew "glow"
+# Command-line option parsing utility
+brew "gnu-getopt"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
 # Ping, but with a graph
 brew "gping"
-# Smart font renderer for non-Roman scripts
-brew "graphite2"
 # Make JSON greppable
 brew "gron"
 # Library for manipulating JPEG-2000 images
@@ -221,10 +227,6 @@ brew "jasper"
 brew "netpbm"
 # GNU triangulated surface library
 brew "gts"
-# C/C++ and Java libraries for Unicode and globalization
-brew "icu4c"
-# OpenType text shaping engine
-brew "harfbuzz"
 # Post-modern modal text editor
 brew "helix"
 # Command-line hex viewer
@@ -245,10 +247,8 @@ brew "libde265"
 brew "xmlto"
 # Database of common MIME types
 brew "shared-mime-info"
-# H.265/HEVC encoder
-brew "x265"
 # LLVM's OpenMP runtime library
-brew "libomp"
+brew "libomp", link: true
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Modular IRC client
@@ -269,6 +269,10 @@ brew "librsvg"
 brew "libssh2"
 # Lynx-like WWW browser that supports tables, menus, etc.
 brew "links"
+# Python 2 and 3 compatibility utilities
+brew "six"
+# Next-gen compiler infrastructure
+brew "llvm"
 # Powerful, lightweight programming language
 brew "lua"
 # Mac App Store command-line interface
@@ -337,12 +341,12 @@ brew "ruby"
 brew "sd"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
-# Python 2 and 3 compatibility utilities
-brew "six"
 # Count lines of code in many languages
 brew "sloccount"
 # Yet another network load monitor
 brew "slurm"
+# Semi-automatic OSINT framework and package manager
+brew "sn0int"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
 # Add a public key to a remote machine's authorized_keys file
@@ -369,6 +373,8 @@ brew "tig"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Source code spell checker
+brew "typos-cli"
 # Data compression library with small memory footprint
 brew "ucl"
 # Tool for writing command-line pipes with instant live preview
@@ -403,8 +409,14 @@ brew "charmbracelet/tap/gum"
 brew "vitorgalvao/tiny-scripts/cask-repair"
 # A youtube-dl fork with additional features and fixes
 brew "yt-dlp/taps/yt-dlp"
+# Apple TV Aerial screensaver
+cask "aerial"
+# Run Stable Diffusion locally
+cask "diffusionbee"
 # Matrix collaboration client
 cask "element"
+# PDF reader
+cask "foxitreader"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
 # Neovim Client
@@ -417,6 +429,8 @@ cask "publii"
 cask "rambox"
 # Store SSH keys in the Secure Enclave
 cask "secretive"
+# CLI to create, run, and deploy Slack apps
+cask "slack-cli"
 # Music streaming service
 cask "spotify"
 # Video communication and virtual meeting platform
