@@ -1,6 +1,7 @@
 tap "buo/cask-upgrade"
 tap "charmbracelet/tap"
 tap "homebrew/bundle"
+tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
@@ -17,14 +18,14 @@ brew "giflib"
 brew "imath"
 # Library for manipulating PNG images
 brew "libpng"
-# TIFF library and utilities
-brew "libtiff"
 # Extremely Fast Compression algorithm
 brew "lz4"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # Zstandard is a real-time compression algorithm
 brew "zstd"
+# TIFF library and utilities
+brew "libtiff"
 # Color management engine supporting ICC profiles
 brew "little-cms2"
 # High dynamic-range image file format
@@ -129,8 +130,6 @@ brew "mpdecimal"
 brew "pcre"
 # Low-level library for pixel manipulation
 brew "pixman"
-# Command-line interface for SQLite
-brew "sqlite"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # Human-friendly and fast alternative to cut and (sometimes) awk
@@ -153,6 +152,8 @@ brew "dos2unix"
 brew "duf"
 # Quickly find duplicates in a set of files from the command-line
 brew "duff"
+# C library implementing the SSH2 protocol
+brew "libssh2"
 # Modern replacement for 'ls'
 brew "exa"
 # Perl lib for reading and writing EXIF metadata
@@ -185,8 +186,6 @@ brew "graphite2"
 brew "icu4c"
 # OpenType text shaping engine
 brew "harfbuzz"
-# Image manipulation library
-brew "jpeg", link: true
 # Library for JPEG-2000 image manipulation
 brew "openjpeg"
 # Framework for layout and rendering of i18n text
@@ -215,22 +214,22 @@ brew "glow"
 brew "gnu-getopt"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
-# GNU Ubiquitous Intelligent Language for Extensions
-brew "guile"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
 # Ping, but with a graph
 brew "gping"
 # Make JSON greppable
 brew "gron"
 # Library for manipulating JPEG-2000 images
 brew "jasper"
+# Image manipulation library
+brew "jpeg", link: true
 # Image manipulation
 brew "netpbm"
 # GNU triangulated surface library
 brew "gts"
+# GNU Ubiquitous Intelligent Language for Extensions
+brew "guile"
 # Post-modern modal text editor
 brew "helix"
 # Command-line hex viewer
@@ -257,6 +256,8 @@ brew "libomp", link: true
 brew "imagemagick"
 # Modular IRC client
 brew "irssi"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # C library for encoding, decoding, and manipulating JSON
 brew "jansson"
 # Serializes the output of command-line tools to structured JSON output
@@ -267,8 +268,6 @@ brew "oniguruma"
 brew "jq"
 # Library to render SVG files using Cairo
 brew "librsvg"
-# C library implementing the SSH2 protocol
-brew "libssh2"
 # Lynx-like WWW browser that supports tables, menus, etc.
 brew "links"
 # Python 2 and 3 compatibility utilities
@@ -300,7 +299,7 @@ brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # No Nonsense Neovim Client in Rust
-brew "neovide"
+brew "neovide", link: false
 # Net top tool grouping bandwidth per process
 brew "nethogs"
 # Port scanning utility for large networks
@@ -329,6 +328,8 @@ brew "pwgen"
 brew "ruby-build"
 # Ruby version manager
 brew "rbenv"
+# Web Reconnaissance Framework
+brew "recon-ng"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
 # Fast, efficient and secure backup program
@@ -411,6 +412,8 @@ brew "vitorgalvao/tiny-scripts/cask-repair"
 brew "yt-dlp/taps/yt-dlp"
 # Apple TV Aerial screensaver
 cask "aerial"
+# Multi-track audio editor and recorder
+cask "audacity"
 # Run Stable Diffusion locally
 cask "diffusionbee"
 # Matrix collaboration client
@@ -429,12 +432,8 @@ cask "publii"
 cask "rambox"
 # Store SSH keys in the Secure Enclave
 cask "secretive"
-# CLI to create, run, and deploy Slack apps
-cask "slack-cli"
 # Music streaming service
 cask "spotify"
-# Application for configuring any YubiKey
-cask "yubico-yubikey-manager"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "1Password for Safari", id: 1569813296
