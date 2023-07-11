@@ -126,23 +126,47 @@ if [ -f ~/.rbenvrc ]; then
     . ~/.rbenvrc
 fi
 
-# asfd
-if [ -f "$(brew --prefix asdf)/libexec/asdf.sh" ]; then
-     source "$(brew --prefix asdf)/libexec/asdf.sh"
+unamestr=$(uname)
+if [[ "$unamestr" == 'Linux' ]]; then
+   platform='linux'
+elif [[ "$unamestr" == 'FreeBSD' ]]; then
+   platform='freebsd'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   platform='osx'
 fi
-if [ -f "$(brew --prefix asdf)/etc/bash_completion.d/asdf.bash" ]; then
-     source "$(brew --prefix asdf)/etc/bash_completion.d/asdf.bash"
+
+if [[ "$platform" == "osx" ]]; then
+    # asfd
+    if [ -f "$(brew --prefix asdf)/libexec/asdf.sh" ]; then
+        source "$(brew --prefix asdf)/libexec/asdf.sh"
+    fi
+    if [ -f "$(brew --prefix asdf)/etc/bash_completion.d/asdf.bash" ]; then
+        source "$(brew --prefix asdf)/etc/bash_completion.d/asdf.bash"
+    fi
+
+    RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+    export RUBY_CONFIGURE_OPTS
+
+else
+    # asfd
+    if [ -f ~/.asdf/asdf.sh ]; then
+        . "$HOME/.asdf/asdf.sh"
+        . "$HOME/.asdf/completions/asdf.bash"
+        export ASDF_GOLANG_MOD_VERSION_ENABLED=true
+    fi
 fi
 
 if [ -f "$HOME"/bin/tmuxinator.bash ]; then
     source "$HOME"/bin/tmuxinator.bash
 fi
 
-if [[ "$platform" == "osx" ]]; then
-    RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-    export RUBY_CONFIGURE_OPTS
+if [[ "$platform" == "Linux" ]]; then
+    /usr/bin/keychain -q --nogui "$HOME/.ssh/id_rsa"
+    source "$HOME/.keychain/chain-sh"
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-/opt/homebrew/bin/fish
+if [[ "$platform" == "osx" ]]; then
+    /opt/homebrew/bin/fish
+fi

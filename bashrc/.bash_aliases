@@ -31,18 +31,19 @@ alias irb='irb -r irb/completion'
 alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
-if [ $platform != 'linux' ]; then
-    alias ls='ls -G'
+if command -v exa &> /dev/null
+then
+    alias ls='exa'
 else
-    alias ls='ls --color=auto'
+    if [ $platform != 'linux' ]; then
+        alias ls='ls -G'
+    else
+        alias ls='ls --color=auto'
+    fi
 fi
-alias python='python3'
-alias scrn='mate-screenshot --interactive'
 alias sshconfig='vim ~/.ssh/config'
-alias t=task
 alias update='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 alias upgrade='sudo apt update && sudo apt upgrade && sudo apt autoremove'
-alias v='vagrant'
 alias vimrc='vim ~/.vimrc'
 alias watch='watch -c '
 
