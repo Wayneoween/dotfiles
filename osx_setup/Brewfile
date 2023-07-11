@@ -2,13 +2,12 @@ tap "buo/cask-upgrade"
 tap "charmbracelet/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "puppetlabs/puppet"
 tap "vitorgalvao/tiny-scripts"
 tap "yt-dlp/taps"
-# Run your GitHub Actions locally 🚀
+# Run your GitHub Actions locally
 brew "act"
 # Generic-purpose lossless compression algorithm by Google
 brew "brotli"
@@ -38,8 +37,16 @@ brew "libvmaf"
 brew "apr"
 # Mozilla CA certificate store
 brew "ca-certificates"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
+# YAML Parser
+brew "libyaml"
+# Library for command-line editing
+brew "readline"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
 # Text processor and publishing toolchain for AsciiDoc
 brew "asciidoctor"
 # Macro processing language
@@ -52,12 +59,6 @@ brew "automake"
 brew "gmp"
 # Generic library support script
 brew "libtool"
-# YAML Parser
-brew "libyaml"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
-# Library for command-line editing
-brew "readline"
 # ODBC 3 connectivity for UNIX
 brew "unixodbc"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
@@ -194,8 +195,6 @@ brew "pango"
 brew "x265"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
-# User-friendly command-line shell for UNIX-like operating systems
-brew "fish"
 # Terminal JSON viewer
 brew "fx"
 # JBIG2 decoder and library (for monochrome documents)
@@ -299,7 +298,7 @@ brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # No Nonsense Neovim Client in Rust
-brew "neovide", link: false
+brew "neovide"
 # Net top tool grouping bandwidth per process
 brew "nethogs"
 # Port scanning utility for large networks
@@ -336,8 +335,6 @@ brew "rename"
 brew "restic"
 # Prevent committing secret keys into your source code
 brew "ripsecrets"
-# Powerful, clean, object-oriented scripting language
-brew "ruby"
 # Intuitive find & replace CLI
 brew "sd"
 # Static analysis and lint tool, for (ba)sh scripts
@@ -414,16 +411,18 @@ brew "yt-dlp/taps/yt-dlp"
 cask "aerial"
 # Multi-track audio editor and recorder
 cask "audacity"
-# Run Stable Diffusion locally
-cask "diffusionbee"
 # Matrix collaboration client
 cask "element"
+# Developer targeted fonts with a high number of glyphs
+cask "font-jetbrains-mono-nerd-font"
 # PDF reader
 cask "foxitreader"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
 # Neovim Client
 cask "neovide"
+# App to write, plan, collaborate, and get organized
+cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Static website generator
