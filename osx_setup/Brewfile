@@ -1,10 +1,9 @@
 tap "buo/cask-upgrade"
 tap "charmbracelet/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
+tap "homebrew/services"
 tap "puppetlabs/puppet"
 tap "vitorgalvao/tiny-scripts"
 tap "yt-dlp/taps"
@@ -36,10 +35,14 @@ brew "webp"
 brew "libvmaf"
 # Apache Portable Runtime library
 brew "apr"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
 # Library for command-line editing
 brew "readline"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
 # Text processor and publishing toolchain for AsciiDoc
 brew "asciidoctor"
 # Automatic configure script builder
@@ -54,6 +57,8 @@ brew "aspell"
 brew "bash"
 # Programmable completion for Bash 3.2
 brew "bash-completion"
+# Regular expressions library
+brew "oniguruma"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Garbage collector for C and C++
@@ -110,10 +115,10 @@ brew "dos2unix"
 brew "duf"
 # Quickly find duplicates in a set of files from the command-line
 brew "duff"
-# Modern replacement for 'ls'
-brew "exa"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
+# Modern, maintained replacement for ls
+brew "eza"
 # Identify or delete duplicate files
 brew "fdupes"
 # Minimalistic plugin API for video effects
@@ -169,7 +174,7 @@ brew "gnu-getopt"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
 # GNU Pretty Good Privacy (PGP) package
-brew "gnupg", link: false
+brew "gnupg"
 # Ping, but with a graph
 brew "gping"
 # Make JSON greppable
@@ -212,16 +217,14 @@ brew "imagemagick"
 brew "irssi"
 # C library for encoding, decoding, and manipulating JSON
 brew "jansson"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
 # Serializes the output of command-line tools to structured JSON output
 brew "jc"
 # Image manipulation library
 brew "jpeg"
-# Regular expressions library
-brew "oniguruma"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
 # Portable Foreign Function Interface library
 brew "libffi"
 # X.Org: pthread-stubs.pc
@@ -230,14 +233,18 @@ brew "libpthread-stubs"
 brew "librsvg"
 # Lynx-like WWW browser that supports tables, menus, etc.
 brew "links"
-# Python 2 and 3 compatibility utilities
-brew "six"
 # Next-gen compiler infrastructure
 brew "llvm"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
+# Python 2 and 3 compatibility utilities
+brew "six"
 # Mac App Store command-line interface
 brew "mas"
 # Fast and user friendly build system
 brew "meson"
+# Run a Kubernetes cluster locally
+brew "minikube"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Protocol buffers (Google's data interchange format)
@@ -266,6 +273,8 @@ brew "pcre"
 brew "nmap"
 # Development kit for the Java programming language
 brew "openjdk"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
 # Swiss-army knife of markup format conversion
@@ -282,10 +291,8 @@ brew "pngcrush"
 brew "pv"
 # Password generator
 brew "pwgen"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
+# Emulator for x86 and PowerPC
+brew "qemu"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
@@ -296,8 +303,12 @@ brew "recon-ng"
 brew "rename"
 # Fast, efficient and secure backup program
 brew "restic"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Prevent committing secret keys into your source code
 brew "ripsecrets"
+# Safe, concurrent, practical language
+brew "rust"
 # Intuitive find & replace CLI
 brew "sd"
 # Static analysis and lint tool, for (ba)sh scripts
@@ -308,6 +319,8 @@ brew "sloccount"
 brew "slurm"
 # Semi-automatic OSINT framework and package manager
 brew "sn0int"
+# Daemon to provide vmnet.framework support for rootless QEMU
+brew "socket_vmnet"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
 # Add a public key to a remote machine's authorized_keys file
@@ -362,8 +375,6 @@ brew "xsv"
 brew "xtrans"
 # Bring your favorite shell wherever you go through the ssh
 brew "xxh"
-# Download YouTube videos from the command-line
-brew "youtube-dl"
 # Fork of youtube-dl with additional features and fixes
 brew "yt-dlp"
 # The Charm Tool and Library 🌟
@@ -376,6 +387,14 @@ brew "vitorgalvao/tiny-scripts/cask-repair"
 cask "foxitreader"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
+# Code snippets, screenshots and workflow context
+cask "pieces"
+# Local datastore, server, and ML engine powering the Pieces for Developers Suite
+cask "pieces-os"
+# Store SSH keys in the Secure Enclave
+cask "secretive"
+# Customizable email client
+cask "thunderbird"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "1Password for Safari", id: 1569813296

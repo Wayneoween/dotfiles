@@ -30,9 +30,9 @@ alias irb='irb -r irb/completion'
 alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
-if command -v exa &> /dev/null
+if command -v eza &> /dev/null
 then
-    alias ls='exa'
+    alias ls='eza'
 else
     if [ $platform != 'linux' ]; then
         alias ls='ls -G'
