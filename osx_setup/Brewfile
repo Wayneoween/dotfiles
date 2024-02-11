@@ -95,6 +95,8 @@ brew "libxrender"
 brew "lzo"
 # Low-level library for pixel manipulation
 brew "pixman"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
 # Human-friendly and fast alternative to cut and (sometimes) awk
 brew "choose-rust"
 # Cross-platform make
@@ -283,6 +285,8 @@ brew "pandoc"
 brew "peco"
 # Parallel gzip
 brew "pigz"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
 # Rename your files using your favorite text editor
 brew "pipe-rename"
 # Optimizer for PNG files
@@ -291,7 +295,7 @@ brew "pngcrush"
 brew "pv"
 # Password generator
 brew "pwgen"
-# Emulator for x86 and PowerPC
+# Generic machine emulator and virtualizer
 brew "qemu"
 # Install various Ruby versions and implementations
 brew "ruby-build"
@@ -383,16 +387,18 @@ brew "charmbracelet/tap/charm"
 brew "charmbracelet/tap/gum"
 # Quickly repair outdated/broken Casks from homebrew-cask
 brew "vitorgalvao/tiny-scripts/cask-repair"
+# Web browser
+cask "firefox"
+# Developer targeted fonts with a high number of glyphs
+cask "font-fira-mono-nerd-font"
 # PDF reader
 cask "foxitreader"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
-# Code snippets, screenshots and workflow context
-cask "pieces"
-# Local datastore, server, and ML engine powering the Pieces for Developers Suite
-cask "pieces-os"
 # Store SSH keys in the Secure Enclave
 cask "secretive"
+# System monitor for the menu bar
+cask "stats"
 # Customizable email client
 cask "thunderbird"
 # Video communication and virtual meeting platform
@@ -410,6 +416,7 @@ mas "MoneyMoney", id: 872698314
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pomo Timer", id: 1447569061
+mas "Reeder", id: 1529448980
 mas "Sweet Home 3D", id: 669289700
 mas "Telephone", id: 406825478
 mas "Texifier", id: 458866234

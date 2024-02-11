@@ -119,6 +119,11 @@ if [ -f "/opt/homebrew/etc/bash_completion.d/asdf.bash" ]; then
     source "/opt/homebrew/etc/bash_completion.d/asdf.bash"
 fi
 
+if command -v direnv &> /dev/null
+then
+  eval "$(direnv hook bash)"
+fi
+
 RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export RUBY_CONFIGURE_OPTS
 
