@@ -23,13 +23,13 @@ alias digall='dig +noall +answer +multiline any'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias gitconfig='vim ~/.gitconfig'
-alias gpg='gpg2'
 alias grep='grep --color=auto'
 alias irb="irb -r irb/completion"
 alias irb='irb -r irb/completion'
 alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
+alias vim='nvim'
 if command -v eza &> /dev/null
 then
     alias ls='eza'
