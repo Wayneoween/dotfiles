@@ -1,14 +1,14 @@
 tap "buo/cask-upgrade"
 tap "charmbracelet/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/services"
 tap "puppetlabs/puppet"
 tap "vitorgalvao/tiny-scripts"
 tap "yt-dlp/taps"
 # Run your GitHub Actions locally
 brew "act"
+# Simple, modern, secure file encryption
+brew "age"
 # Generic-purpose lossless compression algorithm by Google
 brew "brotli"
 # Library and utilities for processing GIFs
@@ -39,8 +39,6 @@ brew "apr"
 brew "openssl@3"
 # Companion library to apr, the Apache Portable Runtime library
 brew "apr-util"
-# Library for command-line editing
-brew "readline"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Text processor and publishing toolchain for AsciiDoc
@@ -49,10 +47,16 @@ brew "asciidoctor"
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
+# Library for command-line editing
+brew "readline"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Spell checker with better logic than ispell
 brew "aspell"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Programmable completion for Bash 3.2
@@ -101,32 +105,6 @@ brew "chezmoi"
 brew "choose-rust"
 # Cross-platform make
 brew "cmake"
-# Reimplementation of ctags(1)
-brew "ctags"
-# AV1 decoder targeted to be small and fast
-brew "dav1d"
-# Good-lookin' diffs with diff-highlight and more
-brew "diff-so-fancy"
-# Standard SGML representation system for technical documents
-brew "docbook"
-# XML vocabulary to create presentation-neutral documents
-brew "docbook-xsl"
-# Convert text between DOS, UNIX, and Mac formats
-brew "dos2unix"
-# Disk Usage/Free Utility - a better 'df' alternative
-brew "duf"
-# Quickly find duplicates in a set of files from the command-line
-brew "duff"
-# Perl lib for reading and writing EXIF metadata
-brew "exiftool"
-# Modern, maintained replacement for ls
-brew "eza"
-# Identify or delete duplicate files
-brew "fdupes"
-# Minimalistic plugin API for video effects
-brew "frei0r"
-# Implementation of the Unicode BiDi algorithm
-brew "fribidi"
 # Asynchronous event library
 brew "libevent"
 # C string library for manipulating Unicode strings
@@ -143,6 +121,44 @@ brew "nettle"
 brew "p11-kit"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
+# Text-based UI library
+brew "ncurses"
+# Generic machine emulator and virtualizer
+brew "qemu"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima"
+# Reimplementation of ctags(1)
+brew "ctags"
+# AV1 decoder targeted to be small and fast
+brew "dav1d"
+# Good-lookin' diffs with diff-highlight and more
+brew "diff-so-fancy"
+# Load/unload environment variables based on $PWD
+brew "direnv"
+# Standard XML representation system for technical documents
+brew "docbook"
+# XML vocabulary to create presentation-neutral documents
+brew "docbook-xsl"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Convert text between DOS, UNIX, and Mac formats
+brew "dos2unix"
+# Disk Usage/Free Utility - a better 'df' alternative
+brew "duf"
+# Quickly find duplicates in a set of files from the command-line
+brew "duff"
+# Perl lib for reading and writing EXIF metadata
+brew "exiftool"
+# Modern, maintained replacement for ls
+brew "eza"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Identify or delete duplicate files
+brew "fdupes"
+# Minimalistic plugin API for video effects
+brew "frei0r"
+# Implementation of the Unicode BiDi algorithm
+brew "fribidi"
 # Smart font renderer for non-Roman scripts
 brew "graphite2"
 # C/C++ and Java libraries for Unicode and globalization
@@ -159,6 +175,8 @@ brew "x265"
 brew "ffmpeg"
 # Terminal JSON viewer
 brew "fx"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # JBIG2 decoder and library (for monochrome documents)
 brew "jbig2dec"
 # International domain name library
@@ -191,14 +209,18 @@ brew "gts"
 brew "pkg-config"
 # GNU Ubiquitous Intelligent Language for Extensions
 brew "guile"
+# Smarter Dockerfile linter to validate best practices
+brew "hadolint"
+# Command-line interface for Hetzner Cloud
+brew "hcloud"
 # Post-modern modal text editor
 brew "helix"
+# Kubernetes package manager
+brew "helm"
 # Command-line hex viewer
 brew "hexyl"
 # <hr />, for your terminal window
 brew "hr"
-# Text-based UI library
-brew "ncurses"
 # Improved top (interactive process viewer)
 brew "htop"
 # Curl statistics made simple
@@ -237,10 +259,6 @@ brew "librsvg"
 brew "links"
 # Next-gen compiler infrastructure
 brew "llvm"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
-# Python 2 and 3 compatibility utilities
-brew "six"
 # Mac App Store command-line interface
 brew "mas"
 # Fast and user friendly build system
@@ -259,28 +277,24 @@ brew "mtr"
 brew "nasm"
 # NCurses Disk Usage
 brew "ncdu"
-# Get, set, and list display resolution
-brew "screenresolution"
-# Fast, highly customisable system info script
-brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # No Nonsense Neovim Client in Rust
 brew "neovide"
+# POSIX *nix fetch script using Nerdfonts
+brew "nerdfetch"
 # Net top tool grouping bandwidth per process
 brew "nethogs"
-# Perl compatible regular expressions library
-brew "pcre"
 # Port scanning utility for large networks
 brew "nmap"
 # Development kit for the Java programming language
 brew "openjdk"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
+# Perl compatible regular expressions library
+brew "pcre"
 # Simplistic interactive filtering tool
 brew "peco"
 # Parallel gzip
@@ -291,18 +305,18 @@ brew "pinentry-mac"
 brew "pipe-rename"
 # Optimizer for PNG files
 brew "pngcrush"
+# Framework for managing multi-language pre-commit hooks
+brew "pre-commit"
 # Monitor data's progress through a pipe
 brew "pv"
 # Password generator
 brew "pwgen"
-# Generic machine emulator and virtualizer
-brew "qemu"
 # Install various Ruby versions and implementations
 brew "ruby-build"
 # Ruby version manager
 brew "rbenv"
-# Web Reconnaissance Framework
-brew "recon-ng"
+# Rsync for cloud storage
+brew "rclone"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
 # Fast, efficient and secure backup program
@@ -313,10 +327,14 @@ brew "ripgrep"
 brew "ripsecrets"
 # Safe, concurrent, practical language
 brew "rust"
+# Get, set, and list display resolution
+brew "screenresolution"
 # Intuitive find & replace CLI
 brew "sd"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Python 2 and 3 compatibility utilities
+brew "six"
 # Count lines of code in many languages
 brew "sloccount"
 # Yet another network load monitor
@@ -357,8 +375,6 @@ brew "typos-cli"
 brew "ucl"
 # Tool for writing command-line pipes with instant live preview
 brew "up"
-# Compress/expand executable files
-brew "upx"
 # X.Org: Set of autoconf macros used to build other xorg packages
 brew "util-macros"
 # Google's JavaScript engine
@@ -379,7 +395,9 @@ brew "xsv"
 brew "xtrans"
 # Bring your favorite shell wherever you go through the ssh
 brew "xxh"
-# Fork of youtube-dl with additional features and fixes
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
+# Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # The Charm Tool and Library 🌟
 brew "charmbracelet/tap/charm"
@@ -387,20 +405,29 @@ brew "charmbracelet/tap/charm"
 brew "charmbracelet/tap/gum"
 # Quickly repair outdated/broken Casks from homebrew-cask
 brew "vitorgalvao/tiny-scripts/cask-repair"
+# Terminal emulator mimicking the old cathode display
+cask "cool-retro-term"
 # Web browser
 cask "firefox"
-# Developer targeted fonts with a high number of glyphs
 cask "font-fira-mono-nerd-font"
 # PDF reader
 cask "foxitreader"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
+# Intercept, modify, replay, save HTTP/S traffic
+cask "mitmproxy"
+# App to write, plan, collaborate, and get organised
+cask "notion"
+# Open-source software for live streaming and screen recording
+cask "obs"
 # Store SSH keys in the Secure Enclave
 cask "secretive"
 # System monitor for the menu bar
 cask "stats"
 # Customizable email client
 cask "thunderbird"
+# Network protocol analyzer
+cask "wireshark"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "1Password for Safari", id: 1569813296
